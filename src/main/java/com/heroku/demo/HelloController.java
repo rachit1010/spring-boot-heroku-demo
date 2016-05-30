@@ -21,7 +21,7 @@ public class HelloController {
 		return "Hello its from retro consumable app";
 	}
 
-	@RequestMapping("/getUser", produces = "application/json")
+	@RequestMapping(path="/getUser", produces = "application/json")
 	@ResponseBody
 	public CustomUser getUserData() {
 		CustomUser usr = new CustomUser();
